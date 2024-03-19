@@ -1,4 +1,3 @@
-{
 'use strict';
 
 //  SHOWING SELECTED ARTICLES SECTION
@@ -30,7 +29,7 @@ const titleClickHandler = function(event){
   
     /* add class 'active' to the correct article */
     targetArticle.classList.add('active');
-  }
+};
   
 
 
@@ -77,8 +76,6 @@ function generateTitleLinks(){
 generateTitleLinks();
 
 const links = document.querySelectorAll('.titles a');
-  for(let link of links){
+for(let link of links){
     link.addEventListener('click', titleClickHandler);
-  }
-
 }
