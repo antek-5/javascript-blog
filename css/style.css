@@ -101,11 +101,24 @@ body {
   margin: 0 10px 0 0;
 }
 
-/*
-.active {
-    font-weight: bold;
-    color: red;
+.tag-size-1 {
+  font-size: 100%;
 }
-*/
+
+.tag-size-2 {
+  font-size: 120%;
+}
+
+.tag-size-3 {
+  font-size: 130%;
+}
+
+.tag-size-4 {
+  font-size: 140%;
+}
+
+.tag-size-5 {
+  font-size: 150%;
+}
 
 /*# sourceMappingURL=style.css.map */
