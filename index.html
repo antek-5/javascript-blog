@@ -222,7 +222,7 @@
 
               <h2 class="section-title">Tags</h2>
 
-              <ul class="list tags">
+              <ul class="list tags list-horizontal">
               </ul>
 
               <h2 class="section-title">Authors</h2>
@@ -239,7 +239,40 @@
         </div>
     </div>
 
+    
 
+    
+
+    <!-- GENERATING ARTICLE LINKS ON THE LEFT -->
+    <script id="template-article-link" type="text/x-handlebars-template">
+      <li><a href="#{{id}}">{{title}}</a></li>
+    </script>
+
+    <!-- GENERATING TAG LINKS IN THE END OF AN ARTICLE -->
+    <script id="template-tag-link" type="text/x-handlebars-template">
+      <li><a href="#tag-{{tag}}">{{tag}}</a></li> 
+    </script>
+
+    <!-- GENERATING AUTHOR LINK IN THE END OF AN ARTICLE -->
+    <script id="template-article-author" type="text/x-handlebars-template">
+      <a href="#author-{{articleAuthor}}">{{articleAuthor}}</a>
+    </script>
+
+    <!-- GENERATING TAG LINKS IN THE RIGHT COLLUMN -->
+    <script id="#template-tag-cloud-link" type="text/x-handlebars-template">
+      <li><a class="{{tagClass}}"href="#tag-{{tag}}">{{tag}}</a></li> 
+    </script>
+
+    <!-- GENERATING TAG LINKS IN THE RIGHT COLLUMN -->
+    <script id="#template-author-list" type="text/x-handlebars-template">
+      <li><a href="#author-{{author}}">{{author}}</a></li> 
+    </script>
+
+    
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
