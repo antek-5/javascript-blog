@@ -92,13 +92,16 @@ function generateTitleLinks(customSelector = ''){
         html = html + linkHTML;
     }
     titleList.innerHTML = html;
+
+    const links = document.querySelectorAll('.titles a');
+    for(let link of links){
+        link.addEventListener('click', titleClickHandler);
+    }
+
 }
 
 generateTitleLinks();
-const links = document.querySelectorAll('.titles a');
-for(let link of links){
-    link.addEventListener('click', titleClickHandler);
-}
+
 
 
 
@@ -210,7 +213,7 @@ function generateTags(){
         allTagsData.tags.push({
             tag: tag,
             count: allTags[tag],
-            className: calculateTagClass(allTags[tag], tagsParams)
+            tagClass: calculateTagClass(allTags[tag], tagsParams)
         });
         
         
